@@ -110,6 +110,11 @@ Write your solution using:
 
 const exercise1Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+const odd1 = exercise1Array.filter(n => n%2 === 1);
+console.log("odd numbers : ", odd1);
+const odd2 = exercise1Array.filter ((n) => {
+  return n % 2 === 1
+})
 // Your solution here (one-line arrow function):
 // const exercise1Result1 = 
 
