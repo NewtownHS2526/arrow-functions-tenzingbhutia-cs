@@ -112,16 +112,17 @@ const exercise1Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const odd1 = exercise1Array.filter(n => n%2 === 1);
 console.log("odd numbers : ", odd1);
+
 const odd2 = exercise1Array.filter ((n) => {
   return n % 2 === 1
 })
-// Your solution here (one-line arrow function):
+// Your solution here (one-line arrow function):S
 // const exercise1Result1 = 
 
 // Your solution here (regular arrow function):
 // const exercise1Result2 = 
 
-// Uncomment to test:
+// Uncomment to test:S
 // console.log("Exercise 1 - One-line:", exercise1Result1);
 // console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: [1, 3, 5, 7, 9]
@@ -138,6 +139,13 @@ Write your solution using:
 */
 
 const exercise2Array = ["apple", "banana", "kiwi", "orange", "grape"];
+const longWords12 = exercise2Array.filter(n => n.length >4);
+console.log("words greater than 4 letters ", longWords12);
+
+const longWords13 = exercise2Array.filter((long) =>{
+  return long.length > 4;
+});
+
 
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
@@ -163,6 +171,12 @@ Write your solution using:
 
 const exercise3Array = [15, 8, 22, 5, 30, 12, 18];
 
+const ex = exercise3Array.filter(n => n > 10 )
+console.log("greater than 10 numbers : ", ex);
+
+const es = exercise3Array.filter((n) =>{
+  return n >10;
+});
 // Your solution here (one-line arrow function):
 // const exercise3Result1 = 
 
@@ -189,6 +203,13 @@ Write your solution using:
 
 const exercise4Array = ["red", "blue", "green", "yellow", "purple"];
 
+const blu = exercise4Array.filter(n => n.startsWith("b"));
+console.log("starting with b" , blu);
+
+const bluee = exercise4Array.filter((n) => {
+  return n.startsWith("b");
+});
+
 // Your solution here (one-line arrow function):
 // const exercise4Result1 = 
 
@@ -213,6 +234,12 @@ Write your solution using:
 
 const exercise5Array = [2, 4, 6, 8, 10, 11, 12, 13, 14];
 
+const four = exercise5Array.filter(n => n % 4 === 0 );
+console.log("divisible by 4", four);
+
+const fourr = exercise5Array.filter((n) =>{
+  return n % 4 === 0 ;
+} );
 // Your solution here (one-line arrow function):
 // const exercise5Result1 = 
 
