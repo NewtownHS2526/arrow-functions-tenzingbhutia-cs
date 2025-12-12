@@ -24,13 +24,18 @@ Write your solution using:
 - Regular arrow function
 */
 
-const exercise1Array = [
+const exercise78Array = [
   { name: "Alice", age: 25 },
   { name: "Bob", age: 17 },
   { name: "Charlie", age: 30 },
   { name: "Diana", age: 16 }
 ];
-
+const agee = exercise78Array.filter((n) => n.age >= 18);
+console.log(agee)
+const agee2 = exercise78Array.filter((n)=> {
+  return n.age > 18;
+});
+console.log("age" ,agee2);
 // Your solution here (one-line arrow function):
 // const exercise1Result1 = 
 
@@ -54,7 +59,7 @@ Write your solution using:
 */
 
 const exercise2Array = [5, -3, 10, -8, 15, -1, 20];
-
+const even3 = exercise2Array.filter(n => n>0);
 // Your solution here (one-line arrow function):
 // const exercise2Result1 = 
 
